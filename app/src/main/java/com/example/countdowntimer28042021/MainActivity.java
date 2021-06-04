@@ -13,12 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CountDownTimer countDownTimer = new CountDownTimer(5500,1000) {
+        CountDownTimer countDownTimer = new CountDownTimer(5100,1000) {
             @Override
             public void onTick(long l) {
-                if (l > 500){
-                    Log.d("BBB",l + "");
-                }
+                Log.d("BBB",l + "");
             }
 
             @Override
